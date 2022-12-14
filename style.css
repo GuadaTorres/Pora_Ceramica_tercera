@@ -4,6 +4,7 @@ body {
     justify-content: space-around;
 }
 
+
 @media screen and (max-width: 400px) {
     .grid-layout {
         height: 650px;
@@ -25,7 +26,7 @@ body {
         grid-area: nav-bar;
         background-color: rgb(174, 180, 192);
         display: flex;
-        justify-content: right;
+        justify-content: left;
         align-items: center;
     }
 
@@ -100,9 +101,10 @@ body {
     }
 
     .body-menu-mobile {
-        background-color:  rgb(89, 91, 95);
+        background-color: rgb(89, 91, 95);
     }
 }
+
 
 @media screen and (min-width: 401px) {
     .grid-layout {
@@ -321,8 +323,3 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-

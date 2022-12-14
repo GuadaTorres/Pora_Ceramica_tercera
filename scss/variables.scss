@@ -1,0 +1,45 @@
+$colorLilaClaro: rgb(235, 237, 242);
+$colorLila: rgb(174, 180, 192);
+$colorVioletaOscuro:  rgb(72, 75, 79);
+$colorVioletaClaro: rgb(77, 81, 86);
+$colorVioletaDark: rgb(96, 100, 108);
+$colorMarron: rgb(140, 128, 112);
+$colorBlanco: #ffff;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+@mixin flex-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+@mixin column-contenido {
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin deco-texto-menu-hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: $colorLilaClaro;
+}
+
+
+
+
+
+
+

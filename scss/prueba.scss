@@ -1,0 +1,315 @@
+@import "variables";
+
+body {
+    margin: unset;
+    font-family: "Montserrat";
+    justify-content: space-around;
+}
+
+// Responsive mobile 
+
+@media screen and (max-width: 400px) {
+    .grid-layout {
+        height: 650px;
+        display: grid;
+        grid-template-areas:
+            "nav-bar nav-bar nav-bar nav-bar"
+            "header header header header"
+            "titulo titulo titulo titulo"
+            "contenido contenido contenido contenido"
+            "footer footer footer footer";
+        grid-template-rows: 8% 45% 15% auto auto 25%;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-mobile {
+        grid-area: nav-bar;
+        background-color: $colorLila;
+        @include flex-left;
+    }
+
+    .nav-bar-contendor {
+        @include flex-center;
+        color: $colorVioletaOscuro;
+        font-size: small;
+        width: 100px;
+        height: 50px;
+    }
+
+    .header-mobile {
+        grid-area: header;
+        background-color: $colorLilaClaro;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .contenido {
+        grid-area: contenido;
+        font-family: "Roboto";
+        background-color: $colorBlanco;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        @include column-contenido;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-texto {
+        color: $colorVioletaClaro;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .menu-contenedor {
+        @include flex-center;
+        color: $colorVioletaOscuro;
+        width: 230px;
+        height: 60px;
+    }
+
+    .menu-contenedor-selec {
+        display: none;
+    }
+
+    .menu-contenedor:hover {
+        background-color: $colorVioletaDark;
+        color: $colorLilaClaro;
+    }
+
+    .menu-texto:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: $colorLilaClaro;
+    }
+
+    .body-menu-mobile {
+        background-color:  $colorVioletaClaro;
+    }
+}
+
+
+// Responsive desktop
+
+@media screen and (min-width: 401px) {
+    .grid-layout {
+        height: 800px;
+        display: grid;
+        grid-template-areas:
+            "nav-bar nav-bar nav-bar nav-bar"
+            "header header header header"
+            "menu menu menu menu"
+            "titulo titulo titulo titulo"
+            "contenido contenido contenido contenido"
+            "footer footer footer footer";
+        grid-template-rows: 8% 45% 8% 15% auto auto 25%;
+    }
+
+    .nav-bar {
+        grid-area: nav-bar;
+        background-color: $colorLila;
+        @include flex-right;
+    }
+
+    .nav-bar-mobile {
+        display: none;
+    }
+
+    .nav-bar-contendor {
+        color: $colorVioletaOscuro;
+        width: 230px;
+        height: 70px;
+        @include flex-center;
+    }
+
+    .nav-bar-contendor:hover {
+        @include deco-texto-menu-hover;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: $colorLilaClaro;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido {
+        grid-area: contenido;
+        font-family: "Roboto";
+        background-color: $colorBlanco;
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        grid-area: menu;
+        background-color: $colorLila;
+        @include flex-center;
+    }
+
+    .menu-contenedor {
+        color: $colorVioletaDark;
+        width: 230px;
+        height: 60px;
+        @include flex-center;
+    }
+
+    .menu-contenedor:hover {
+        background-color: $colorVioletaDark;
+        color: $colorLilaClaro;
+    }
+
+    .menu-texto {
+        color: $colorVioletaClaro;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .menu-texto:hover {
+        @include deco-texto-menu-hover;
+    }
+
+    .menu-contenedor-selec {
+        font-weight: bold;
+        width: 150px;
+        height: 60px;
+        background-color: $colorVioletaDark;
+        color: $colorLilaClaro;
+        @include flex-center;
+    }
+}
+
+
+// Grid no responsive
+
+.nav-bar-contendor:hover {
+    font-weight: bold;
+    background-color: $colorVioletaClaro;
+    color: $colorLilaClaro scale (1.5);
+}
+
+.titulo {
+    grid-area: titulo;
+    @include flex-center
+}
+
+.footer {
+    grid-area: footer;
+    background-color: $colorLilaClaro;
+    color: $colorLila;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Estilos extras
+
+.footer-contenido {
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    background-color: $colorLilaClaro;
+    color: $colorLila;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: $colorMarron;
+    text-align: center;
+    font-size: x-large;
+}
+
+h2 {
+    color: $colorMarron;
+    font-family: "Montserrat";
+    font-size: large;
+}
+
+.contacto-contenedor {
+    font-family: "Roboto";
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card-body:hover {
+    color: $colorLila;
+}
+
+.col:hover {
+    transform: scale(1.05)
+}
+
+.boton-contacto {
+    background-color: $colorVioletaDark;
+    font-family: "Montserrat";
+    color: $colorBlanco;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.espaciado-contacto {
+    color: $colorBlanco;
+    height: 20px;
+}
+
+.categoria {
+    font-family: "Roboto";
+    width: 300px;
+    height: 200px;
+    align-items: top;
+}
+
+.contenido-texto {
+    font-family: "Roboto";
+    justify-content: left;
+}
+
+.imagen-quienes {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 15px;
+    @include flex-center
+}
+
+.contenido-imagen-quienes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido-menu-mobile {
+    grid-area: header;
+    background-color: $colorLila;
+    font-family: "Montserrat";
+    justify-content: center;
+    align-items: center;
+}
