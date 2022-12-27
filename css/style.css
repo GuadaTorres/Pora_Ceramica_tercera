@@ -7,7 +7,11 @@ body {
   .grid-layout {
     height: 650px;
     display: grid;
-    grid-template-areas: "nav-bar nav-bar nav-bar nav-bar" "header header header header" "titulo titulo titulo titulo" "contenido contenido contenido contenido" "footer footer footer footer";
+    grid-template-areas: "nav-bar nav-bar nav-bar nav-bar"
+ "header header header header"
+ "titulo titulo titulo titulo"
+ "contenido contenido contenido contenido"
+ "footer footer footer footer";
     grid-template-rows: 8% 45% 15% auto auto 25%; }
   .nav-bar {
     display: none; }
@@ -74,7 +78,12 @@ body {
   .grid-layout {
     height: 800px;
     display: grid;
-    grid-template-areas: "nav-bar nav-bar nav-bar nav-bar" "header header header header" "menu menu menu menu" "titulo titulo titulo titulo" "contenido contenido contenido contenido" "footer footer footer footer";
+    grid-template-areas: "nav-bar nav-bar nav-bar nav-bar"
+ "header header header header"
+ "menu menu menu menu"
+ "titulo titulo titulo titulo"
+ "contenido contenido contenido contenido"
+ "footer footer footer footer";
     grid-template-rows: 8% 45% 8% 15% auto auto 25%; }
   .nav-bar {
     grid-area: nav-bar;
