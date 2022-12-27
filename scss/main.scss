@@ -95,7 +95,7 @@ body {
     }
 
     .body-menu-mobile {
-        background-color:  $colorVioletaClaro;
+        background-color: $colorVioletaClaro;
     }
 }
 
@@ -254,12 +254,9 @@ h2 {
     margin-bottom: 15px;
 }
 
-.card-body:hover {
-    color: $colorLila;
-}
-
 .col:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
+    color: $colorLila;
 }
 
 .boton-contacto {
