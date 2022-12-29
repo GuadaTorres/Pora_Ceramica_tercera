@@ -1,8 +1,10 @@
 body {
   margin: unset;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   justify-content: space-around;
 }
+
+/*Responsive mobile*/
 
 @media screen and (max-width: 400px) {
   .grid-layout {
@@ -15,6 +17,8 @@ body {
       "footer footer footer footer";
     grid-template-rows: 8% 45% 15% auto auto 25%;
   }
+
+  /*Responsive mobile - Nav bar - Carrito*/
 
   .nav-bar {
     display: none;
@@ -38,6 +42,8 @@ body {
     height: 50px;
   }
 
+  /*Responsive mobile - Carousel*/
+
   .header-mobile {
     grid-area: header;
     background-color: #ebedf2;
@@ -50,19 +56,7 @@ body {
     display: none;
   }
 
-  .contenido {
-    grid-area: contenido;
-    font-family: "Roboto";
-    background-color: #ffff;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    flex-direction: column;
-    align-items: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  /*Responsive mobile - Nav bar - Menu*/
 
   .menu {
     display: none;
@@ -101,7 +95,25 @@ body {
   .body-menu-mobile {
     background-color: #4d5156;
   }
+
+  /*Responsive mobile - Contenido general*/
+
+  .contenido {
+    grid-area: contenido;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffff;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
+
+/*Responsive desktop*/
 
 @media screen and (min-width: 401px) {
   .grid-layout {
@@ -115,6 +127,8 @@ body {
       "footer footer footer footer";
     grid-template-rows: 8% 45% 8% 15% auto auto 25%;
   }
+
+  /*Responsive desktop - Nav bar - Carrito*/
 
   .nav-bar {
     grid-area: nav-bar;
@@ -143,6 +157,8 @@ body {
     color: #ebedf2;
   }
 
+  /*Responsive desktop - Carousel*/
+
   .header-mobile {
     display: none;
   }
@@ -155,19 +171,14 @@ body {
     align-items: center;
   }
 
-  .contenido {
-    grid-area: contenido;
-    font-family: "Roboto";
-    background-color: #ffff;
-    display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 360px;
   }
+
+  /*Responsive desktop - Nav bar - Menu*/
 
   .menu {
     grid-area: menu;
@@ -213,7 +224,25 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  /*Responsive mobile - Contenido general*/
+
+  .contenido {
+    grid-area: contenido;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffff;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
+
+/*Grid no responsive*/
 
 .nav-bar-contendor:hover {
   font-weight: bold;
@@ -236,6 +265,8 @@ body {
   align-items: center;
 }
 
+/*Estilos extras*/
+
 .footer-contenido {
   width: 100%;
   height: 20px;
@@ -254,12 +285,12 @@ h1 {
 
 h2 {
   color: #8c8070;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-size: large;
 }
 
 .contacto-contenedor {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   height: 100px;
   margin-bottom: 15px;
 }
@@ -270,18 +301,18 @@ h2 {
 }
 
 .dropdown-menu {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   background-color: #60646c;
 }
 
 .dropdown-item {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   color: #ffff;
 }
 
 .boton-contacto {
   background-color: #60646c;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   color: #ffff;
   height: 50px;
   width: 200px;
@@ -299,14 +330,14 @@ h2 {
 }
 
 .categoria {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   width: 300px;
   height: 200px;
   justify-content: center;
 }
 
 .contenido-texto {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   justify-content: left;
 }
 
@@ -328,7 +359,7 @@ h2 {
 .contenido-menu-mobile {
   grid-area: header;
   background-color: #aeb4c0;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   justify-content: center;
   align-items: center;
 }

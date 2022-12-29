@@ -2,7 +2,7 @@
 
 body {
     margin: unset;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     justify-content: space-around;
 }
 
@@ -20,6 +20,8 @@ body {
             "footer footer footer footer";
         grid-template-rows: 8% 45% 15% auto auto 25%;
     }
+
+    // Responsive mobile - Nav bar carrito
 
     .nav-bar {
         display: none;
@@ -39,6 +41,8 @@ body {
         height: 50px;
     }
 
+    // Responsive mobile - Carousel
+
     .header-mobile {
         grid-area: header;
         background-color: $colorLilaClaro;
@@ -51,16 +55,7 @@ body {
         display: none;
     }
 
-    .contenido {
-        grid-area: contenido;
-        font-family: "Roboto";
-        background-color: $colorBlanco;
-        display: flex;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-        @include column-contenido;
-    }
+    // Responsive mobile - Nav bar - Menu
 
     .menu {
         display: none;
@@ -97,6 +92,19 @@ body {
     .body-menu-mobile {
         background-color: $colorVioletaClaro;
     }
+
+    // Responsive mobile - Contenido general
+
+    .contenido {
+        grid-area: contenido;
+        font-family: 'Roboto', sans-serif;
+        background-color: $colorBlanco;
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        @include column-contenido;
+    }
 }
 
 
@@ -115,6 +123,8 @@ body {
             "footer footer footer footer";
         grid-template-rows: 8% 45% 8% 15% auto auto 25%;
     }
+
+    // Responsive desktop - Nav bar carrito
 
     .nav-bar {
         grid-area: nav-bar;
@@ -137,6 +147,8 @@ body {
         @include deco-texto-menu-hover;
     }
 
+    // Responsive desktop - Carousel
+
     .header-mobile {
         display: none;
     }
@@ -149,19 +161,14 @@ body {
         align-items: center;
     }
 
-    .contenido {
-        grid-area: contenido;
-        font-family: "Roboto";
-        background-color: $colorBlanco;
-        display: flex;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 360px;
     }
+
+    // Responsive desktop - Nav bar - Menu
 
     .menu {
         grid-area: menu;
@@ -198,6 +205,22 @@ body {
         background-color: $colorVioletaDark;
         color: $colorLilaClaro;
         @include flex-center;
+    }
+
+    // Responsive mobile - Contenido general
+
+    .contenido {
+        grid-area: contenido;
+        font-family: 'Roboto', sans-serif;
+        background-color: $colorBlanco;
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -244,12 +267,12 @@ h1 {
 
 h2 {
     color: $colorMarron;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
 }
 
 .contacto-contenedor {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     height: 100px;
     margin-bottom: 15px;
 }
@@ -261,7 +284,7 @@ h2 {
 
 .boton-contacto {
     background-color: $colorVioletaDark;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     color: $colorBlanco;
     height: 50px;
     width: 200px;
@@ -279,14 +302,14 @@ h2 {
 }
 
 .categoria {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     width: 300px;
     height: 200px;
     align-items: top;
 }
 
 .contenido-texto {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     justify-content: left;
 }
 
@@ -306,7 +329,7 @@ h2 {
 .contenido-menu-mobile {
     grid-area: header;
     background-color: $colorLila;
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
 }
